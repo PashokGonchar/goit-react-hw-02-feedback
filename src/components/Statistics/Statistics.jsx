@@ -1,14 +1,17 @@
 import PropTypes from 'prop-types';
+import {
+  StatisticsUl
+} from './Statistics.styled'
 
-function Statistics({ good, neutral, bad, total, positivePercentage }) {
+function Statistics({ Good, Neutral, Bad, total, positivePercentage }) {
   return (
-    <ul>
-      <li>Good : {good}</li>
-      <li>Neutral : {neutral}</li>
-      <li>Bad : {bad}</li>
+    <StatisticsUl>
+      <li>Good : {Good}</li>
+      <li>Neutral : {Neutral}</li>
+      <li>Bad : {Bad}</li>
       <li>Total : {total}</li>
       <li>Positive feedback : {positivePercentage} %</li>
-    </ul>
+    </StatisticsUl>
   );
 }
 
